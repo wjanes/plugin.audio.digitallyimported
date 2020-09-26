@@ -2,8 +2,7 @@
 <addon id="plugin.audio.digitallyimported" name="DI.FM Premium" version="1.0.0" provider-name="Groovie">
     <requires>
         <!-- Python 3 Support -->
-        <!--import addon="xbmc.python" version="3.0.0" /-->
-        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="xbmc.python" version="3.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>audio</provides>
