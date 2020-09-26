@@ -1,0 +1,34 @@
+# Kodi Media Center language file
+# Addon Name: DI.FM Radio
+# Addon id: audio.digitallyimported
+# Addon Provider: Groovie
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/wjanes/plugin.audio.digitallyimported/issues\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-09-26 21:53+0200\n"
+"Last-Translator: Gr00v13\n"
+"Language-Team: MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+"MIME-Version: 1.0\n"
+
+msgctxt "#33000"
+msgid "Settings"
+msgstr "Settings"
+
+msgctxt "#33001"
+msgid "Private API Key"
+msgstr "Private API Key"
+
+msgctxt "#33100"
+msgid "Disco House is what happens when the uplifting, feel-good sound of classic seventies disco collides with the smooth, kick drum sound of contemporary house. This channel is what happens when the best of the genre is curated into one mood-boosting radio playlist. Whether you’re looking to get up and dance with your friends or chill out and relax with your headphones, this handpicked collection of modern disco house beats will get you where you need to go. Just push play and let the captivating sounds of Disco House take over your mind, body, and spirit."
+msgstr "Disco House is what happens when the uplifting, feel-good sound of classic seventies disco collides with the smooth, kick drum sound of contemporary house. This channel is what happens when the best of the genre is curated into one mood-boosting radio playlist. Whether you’re looking to get up and dance with your friends or chill out and relax with your headphones, this handpicked collection of modern disco house beats will get you where you need to go. Just push play and let the captivating sounds of Disco House take over your mind, body, and spirit."
+
+msgctxt "#33101"
+msgid "With funky grooves, exciting and face-melting guitar licks, and clever samples that layer each song with a dynamic combination of beat and melody, you’ll certainly find yourself wanting to vibe out once you begin to take note of the 4/4 swing. Ideal for funk lovers and perfect for those who just can’t get enough of house music, this unique radio channel brings the best of both worlds to the table to create an engaging soundtrack of house music with an attitude. If you can’t get enough of tasty guitar solos and fast, energetic beats, give this radio channel a try and lose yourself in the perfect fusion playlist."
+msgstr "With funky grooves, exciting and face-melting guitar licks, and clever samples that layer each song with a dynamic combination of beat and melody, you’ll certainly find yourself wanting to vibe out once you begin to take note of the 4/4 swing. Ideal for funk lovers and perfect for those who just can’t get enough of house music, this unique radio channel brings the best of both worlds to the table to create an engaging soundtrack of house music with an attitude. If you can’t get enough of tasty guitar solos and fast, energetic beats, give this radio channel a try and lose yourself in the perfect fusion playlist."

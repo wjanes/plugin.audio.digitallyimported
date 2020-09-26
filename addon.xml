@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.digitallyimported" name="DI.FM Premium" version="1.0.0" provider-name="Groovie">
+    <requires>
+        <!-- Python 3 Support -->
+        <!--import addon="xbmc.python" version="3.0.0" /-->
+        <import addon="xbmc.python" version="2.25.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Music streaming from DI.FM electronic music </summary>
+        <summary lang="de_DE">Music streaming von DI.FM </summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="en_GB">DI.FM (also known as Digitally Imported) is an Internet radio broadcaster consisting
+            of over 90 channels dedicated exclusively to electronic music, such as house, trance, techno, drum and bass,
+            and dubstep. DI.FM broadcasts handpicked selections consisting of classic, new and up-and-coming hits,
+            as well as weekly and monthly mixed shows from professional DJs. It was founded in December 1999 as a
+            hobby project by Ari Shohat in his Binghamton University dorm room and was one of the first
+            Internet radio stations. It has often been listed as one of the top internet radio stations.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/images/logo.png</icon>
+            <fanart>resources/images/background.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
