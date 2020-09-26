@@ -9,13 +9,9 @@ from urllib.parse import urlencode
 import os
 
 addon = xbmcaddon.Addon()
-apikey = addon.getSettingString("apikey")
 addonpath = addon.getAddonInfo('path')
 player = xbmc.Player()
 
-streams = dict(
-    {'Disco House': ['http://prem2.di.fm/discohouse?' + apikey, 'disco_house.jpg',addon.getLocalizedString(33100)],
-     'Funky House': ['http://prem2.di.fm/funkyhouse?' + apikey, 'funky_house.png',addon.getLocalizedString(33101)]})
 
 def get_url(params):
     return '{0}?{1}'.format(_url, urlencode(params))
@@ -26,6 +22,13 @@ def get_image(image):
 
 
 def list_streams():
+    streams = dict(
+
+        {'Disco House': ['http://prem2.di.fm/discohouse?' + xbmcaddon.Addon().getSetting("apikey"),
+                         'disco_house.jpg', addon.getLocalizedString(33100)],
+         'Funky House': ['http://prem2.di.fm/funkyhouse?' + xbmcaddon.Addon().getSetting("apikey"),
+                         'funky_house.png', addon.getLocalizedString(33101)]})
+
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Streams')
     xbmcplugin.setContent(_handle, 'songs')
 
