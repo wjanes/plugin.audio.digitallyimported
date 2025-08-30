@@ -9,7 +9,7 @@ from urllib.parse import urlencode
 import os
 
 
-# === DI.FM Kodi Addon ===
+# === DI.FM Kodi Addon by Groovie ===
 # Refactored: zentrale Datenhaltung, Hilfsfunktionen, Logging, bessere Wartbarkeit
 
 addon = xbmcaddon.Addon()
@@ -19,42 +19,45 @@ player = xbmc.Player()
 
 # --- Genres und Streams zentral ---
 GENRES = {
-    'house': 'House',
-    # Weitere Genres hier ergänzen
+    'trance': "TRANCE",
+    'house': 'HOUSE',
+    'lounge': 'LOUNGE',
+    'techno': 'TECHNO',
+    'deep': 'DEEP',
+    'edm': 'EDM',
+    'chillout': 'CHILLOUT',
+    'bass': 'BASS',
+    'dance': 'DANCE',
+    'vocal': 'VOCAL',
+    'hard': 'HARD',
+    'ambience': 'AMBIENCE',
+    'synth': 'SYNTH',
+    'classic': 'CLASSIC'
 }
 
 STREAMS = {
     'house': {
-        'Disco House': [f'http://prem2.di.fm/discohouse?{apikey}', 'disco_house.jpg', addon.getLocalizedString(33100)],
-        'Funky House': [f'http://prem2.di.fm/funkyhouse?{apikey}', 'funky_house.png', addon.getLocalizedString(33101)],
-    },
-    # Weitere Genres und Streams hier ergänzen
+        'Disco House': [f'http://prem2.di.fm/discohouse_hi?{apikey}', 'disco_house.jpg', addon.getLocalizedString(33100)],
+        'Funky House': [f'http://prem2.di.fm/funkyhouse_hi?{apikey}', 'funky_house.jpg', addon.getLocalizedString(33101)],
+        'Deep House': [f'http://prem2.di.fm/deephouse_hi?{apikey}', 'deep_house.jpg', addon.getLocalizedString(33102)],
+    }
 }
 
-
+# Baut eine Plugin-URL mit den übergebenen Parametern
 def get_url(params):
-    """
-    Baut eine Plugin-URL mit den übergebenen Parametern
-    """
     return '{0}?{1}'.format(_url, urlencode(params))
 
 
+# Gibt den Pfad zu einem Bild in resources/images zurück
 def get_image(image):
-    """
-    Gibt den Pfad zu einem Bild in resources/images zurück
-    """
     return os.path.join(addonpath, 'resources', 'images', image)
 
+# Einheitliches Logging
 def log(msg, level=xbmc.LOGDEBUG):
-    """
-    Einheitliches Logging
-    """
     xbmc.log(f'[DI.FM Addon] {msg}', level)
 
+# Erstellt und konfiguriert ein Kodi ListItem für einen Stream oder Ordner
 def create_listitem(title, url, icon, fanart, plot='', genre='', is_playable=True):
-    """
-    Erstellt und konfiguriert ein Kodi ListItem für einen Stream oder Ordner
-    """
     liz = xbmcgui.ListItem(label=title, path=url)
     liz.setArt({'icon': icon, 'fanart': fanart, 'thumb': icon})
     liz.setInfo(type='music', infoLabels={'title': title, 'plot': plot, 'genre': genre})
@@ -64,10 +67,8 @@ def create_listitem(title, url, icon, fanart, plot='', genre='', is_playable=Tru
     return liz
 
 
+# Zeigt alle verfügbaren Genres als Unterordner im Kodi-Plugin an
 def list_genres():
-    """
-    Zeigt alle verfügbaren Genres als Unterordner im Kodi-Plugin an
-    """
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Genres')
     for genre_id, genre_name in GENRES.items():
         url = get_url({'action': 'list_streams', 'genre': genre_id})
@@ -75,10 +76,8 @@ def list_genres():
         xbmcplugin.addDirectoryItem(_handle, url, liz, isFolder=True)
     xbmcplugin.endOfDirectory(_handle)
 
+# Zeigt alle Streams eines Genres als abspielbare ListItems an
 def list_streams(genre=None):
-    """
-    Zeigt alle Streams eines Genres als abspielbare ListItems an
-    """
     streams = STREAMS.get(genre, {})
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Streams')
     xbmcplugin.setContent(_handle, 'songs')
@@ -97,11 +96,8 @@ def list_streams(genre=None):
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
     xbmcplugin.endOfDirectory(_handle)
 
-
+# Startet die Wiedergabe eines ausgewählten Streams
 def play_stream(path, icon, title, fanart):
-    """
-    Startet die Wiedergabe eines ausgewählten Streams
-    """
     if player.isPlaying():
         log('Stop player')
         player.stop()
@@ -110,10 +106,8 @@ def play_stream(path, icon, title, fanart):
     xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
 
 
+# Router-Funktion: Steuert die Navigation und Aktionen im Plugin anhand der URL-Parameter
 def router(route):
-    """
-    Router-Funktion: Steuert die Navigation und Aktionen im Plugin anhand der URL-Parameter
-    """
     params = dict(parse_qsl(route))
     log('Parameter list: {}'.format(params))
     if params:
@@ -124,7 +118,7 @@ def router(route):
     else:
         list_genres()
 
-
+# Einstiegspunkt
 _url = sys.argv[0]
 _handle = int(sys.argv[1])
 
