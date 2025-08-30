@@ -21,32 +21,47 @@ def get_image(image):
     return os.path.join(addonpath, 'resources', 'images', image)
 
 
-def list_streams():
-    streams = dict(
+def list_genres():
+    genres = {
+        'house': 'House',
+        # Hier können weitere Genres ergänzt werden
+    }
+    xbmcplugin.setPluginCategory(_handle, 'DI.FM Genres')
+    for genre_id, genre_name in genres.items():
+        url = get_url({'action': 'list_streams', 'genre': genre_id})
+        liz = xbmcgui.ListItem(label=genre_name)
+        xbmcplugin.addDirectoryItem(_handle, url, liz, isFolder=True)
+    xbmcplugin.endOfDirectory(_handle)
 
-        {'Disco House': ['http://prem2.di.fm/discohouse?' + xbmcaddon.Addon().getSetting("apikey"),
-                         'disco_house.jpg', addon.getLocalizedString(33100)],
-         'Funky House': ['http://prem2.di.fm/funkyhouse?' + xbmcaddon.Addon().getSetting("apikey"),
-                         'funky_house.png', addon.getLocalizedString(33101)]})
-
+def list_streams(genre=None):
+    all_streams = {
+        'house': {
+            'Disco House': ['http://prem2.di.fm/discohouse?' + xbmcaddon.Addon().getSetting("apikey"),
+                            'disco_house.jpg', addon.getLocalizedString(33100)],
+            'Funky House': ['http://prem2.di.fm/funkyhouse?' + xbmcaddon.Addon().getSetting("apikey"),
+                            'funky_house.png', addon.getLocalizedString(33101)],
+        },
+        # Weitere Genres und Streams können hier ergänzt werden
+    }
+    streams = all_streams.get(genre, {})
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Streams')
     xbmcplugin.setContent(_handle, 'songs')
-
     for stream in streams:
-        liz = xbmcgui.ListItem(label=stream)
-        liz.setPath(streams[stream][0])
-        liz.setArt({'icon': get_image(streams[stream][1]),
-                    'fanart': get_image(streams[stream][1])})
-        liz.setInfo(type='video', infoLabels={'plot': streams[stream][2]})
-
+        stream_url = streams[stream][0]
+        stream_icon = get_image(streams[stream][1])
+        stream_fanart = get_image(streams[stream][1])
+        stream_title = stream or 'DI.FM Stream'
+        stream_plot = streams[stream][2] if len(streams[stream]) > 2 else ''
+        liz = xbmcgui.ListItem(label=stream_title, path=stream_url)
+        liz.setArt({'icon': stream_icon, 'fanart': stream_fanart, 'thumb': stream_icon})
+        liz.setInfo(type='music', infoLabels={'title': stream_title, 'plot': stream_plot, 'genre': genre or ''})
         liz.setProperty('IsPlayable', 'true')
-        url = get_url({'action': 'play', 'url': streams[stream][0],
-                       'icon': get_image(streams[stream][1]),
-                       'title': 'DI.FM Stream'.format(stream),
-                       'fanart': get_image(streams[stream][1])})
-
+        liz.setProperty('mimetype', 'audio/mpeg')
+        url = get_url({'action': 'play', 'url': stream_url,
+                       'icon': stream_icon,
+                       'title': stream_title,
+                       'fanart': stream_fanart})
         xbmcplugin.addDirectoryItem(_handle, url, liz, isFolder=False)
-
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
     xbmcplugin.endOfDirectory(_handle)
 
@@ -57,8 +72,10 @@ def play_stream(path, icon, title, fanart):
         player.stop()
     xbmc.log('Playing {}'.format(path))
     play_item = xbmcgui.ListItem(path=path)
-    play_item.setInfo('music', {'title': title})
+    play_item.setInfo('music', {'title': title or 'DI.FM Stream'})
     play_item.setArt({'icon': icon, 'thumb': icon, 'fanart': fanart})
+    play_item.setProperty('IsPlayable', 'true')
+    play_item.setProperty('mimetype', 'audio/mpeg')
     xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
 
 
@@ -68,8 +85,10 @@ def router(route):
     if params:
         if params['action'] == 'play':
             play_stream(params['url'], params['icon'], params['title'], params['fanart'])
+        elif params['action'] == 'list_streams':
+            list_streams(params.get('genre'))
     else:
-        list_streams()
+        list_genres()
 
 
 _url = sys.argv[0]
