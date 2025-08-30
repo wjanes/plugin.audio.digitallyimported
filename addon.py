@@ -8,55 +8,87 @@ from urllib.parse import parse_qsl
 from urllib.parse import urlencode
 import os
 
+
+# === DI.FM Kodi Addon ===
+# Refactored: zentrale Datenhaltung, Hilfsfunktionen, Logging, bessere Wartbarkeit
+
 addon = xbmcaddon.Addon()
 addonpath = addon.getAddonInfo('path')
+apikey = addon.getSetting("apikey")
 player = xbmc.Player()
+
+# --- Genres und Streams zentral ---
+GENRES = {
+    'house': 'House',
+    # Weitere Genres hier ergänzen
+}
+
+STREAMS = {
+    'house': {
+        'Disco House': [f'http://prem2.di.fm/discohouse?{apikey}', 'disco_house.jpg', addon.getLocalizedString(33100)],
+        'Funky House': [f'http://prem2.di.fm/funkyhouse?{apikey}', 'funky_house.png', addon.getLocalizedString(33101)],
+    },
+    # Weitere Genres und Streams hier ergänzen
+}
 
 
 def get_url(params):
+    """
+    Baut eine Plugin-URL mit den übergebenen Parametern
+    """
     return '{0}?{1}'.format(_url, urlencode(params))
 
 
 def get_image(image):
+    """
+    Gibt den Pfad zu einem Bild in resources/images zurück
+    """
     return os.path.join(addonpath, 'resources', 'images', image)
+
+def log(msg, level=xbmc.LOGDEBUG):
+    """
+    Einheitliches Logging
+    """
+    xbmc.log(f'[DI.FM Addon] {msg}', level)
+
+def create_listitem(title, url, icon, fanart, plot='', genre='', is_playable=True):
+    """
+    Erstellt und konfiguriert ein Kodi ListItem für einen Stream oder Ordner
+    """
+    liz = xbmcgui.ListItem(label=title, path=url)
+    liz.setArt({'icon': icon, 'fanart': fanart, 'thumb': icon})
+    liz.setInfo(type='music', infoLabels={'title': title, 'plot': plot, 'genre': genre})
+    if is_playable:
+        liz.setProperty('IsPlayable', 'true')
+        liz.setProperty('mimetype', 'audio/mpeg')
+    return liz
 
 
 def list_genres():
-    genres = {
-        'house': 'House',
-        # Hier können weitere Genres ergänzt werden
-    }
+    """
+    Zeigt alle verfügbaren Genres als Unterordner im Kodi-Plugin an
+    """
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Genres')
-    for genre_id, genre_name in genres.items():
+    for genre_id, genre_name in GENRES.items():
         url = get_url({'action': 'list_streams', 'genre': genre_id})
         liz = xbmcgui.ListItem(label=genre_name)
         xbmcplugin.addDirectoryItem(_handle, url, liz, isFolder=True)
     xbmcplugin.endOfDirectory(_handle)
 
 def list_streams(genre=None):
-    all_streams = {
-        'house': {
-            'Disco House': ['http://prem2.di.fm/discohouse?' + xbmcaddon.Addon().getSetting("apikey"),
-                            'disco_house.jpg', addon.getLocalizedString(33100)],
-            'Funky House': ['http://prem2.di.fm/funkyhouse?' + xbmcaddon.Addon().getSetting("apikey"),
-                            'funky_house.png', addon.getLocalizedString(33101)],
-        },
-        # Weitere Genres und Streams können hier ergänzt werden
-    }
-    streams = all_streams.get(genre, {})
+    """
+    Zeigt alle Streams eines Genres als abspielbare ListItems an
+    """
+    streams = STREAMS.get(genre, {})
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Streams')
     xbmcplugin.setContent(_handle, 'songs')
-    for stream in streams:
-        stream_url = streams[stream][0]
-        stream_icon = get_image(streams[stream][1])
-        stream_fanart = get_image(streams[stream][1])
+    for stream, data in streams.items():
+        stream_url = data[0]
+        stream_icon = get_image(data[1])
+        stream_fanart = get_image(data[1])
         stream_title = stream or 'DI.FM Stream'
-        stream_plot = streams[stream][2] if len(streams[stream]) > 2 else ''
-        liz = xbmcgui.ListItem(label=stream_title, path=stream_url)
-        liz.setArt({'icon': stream_icon, 'fanart': stream_fanart, 'thumb': stream_icon})
-        liz.setInfo(type='music', infoLabels={'title': stream_title, 'plot': stream_plot, 'genre': genre or ''})
-        liz.setProperty('IsPlayable', 'true')
-        liz.setProperty('mimetype', 'audio/mpeg')
+        stream_plot = data[2] if len(data) > 2 else ''
+        liz = create_listitem(stream_title, stream_url, stream_icon, stream_fanart, plot=stream_plot, genre=genre or '')
         url = get_url({'action': 'play', 'url': stream_url,
                        'icon': stream_icon,
                        'title': stream_title,
@@ -67,21 +99,23 @@ def list_streams(genre=None):
 
 
 def play_stream(path, icon, title, fanart):
+    """
+    Startet die Wiedergabe eines ausgewählten Streams
+    """
     if player.isPlaying():
-        xbmc.log('Stop player')
+        log('Stop player')
         player.stop()
-    xbmc.log('Playing {}'.format(path))
-    play_item = xbmcgui.ListItem(path=path)
-    play_item.setInfo('music', {'title': title or 'DI.FM Stream'})
-    play_item.setArt({'icon': icon, 'thumb': icon, 'fanart': fanart})
-    play_item.setProperty('IsPlayable', 'true')
-    play_item.setProperty('mimetype', 'audio/mpeg')
+    log(f'Playing {path}')
+    play_item = create_listitem(title or 'DI.FM Stream', path, icon, fanart)
     xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
 
 
 def router(route):
+    """
+    Router-Funktion: Steuert die Navigation und Aktionen im Plugin anhand der URL-Parameter
+    """
     params = dict(parse_qsl(route))
-    xbmc.log('Parameter list: {}'.format(params), xbmc.LOGDEBUG)
+    log('Parameter list: {}'.format(params))
     if params:
         if params['action'] == 'play':
             play_stream(params['url'], params['icon'], params['title'], params['fanart'])
