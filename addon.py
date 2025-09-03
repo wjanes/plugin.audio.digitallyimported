@@ -87,7 +87,7 @@ def create_listitem(title, url, icon, fanart, plot='', genre='', is_playable=Tru
 def list_genres():
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Genres')
     for genre_id, genre_name in GENRES.items():
-        url = get_url({'action': 'list_streams', 'genre': genre_name})
+        url = get_url({'action': 'list_streams', 'genre': genre_id})
         liz = xbmcgui.ListItem(label=genre_name)
         xbmcplugin.addDirectoryItem(_handle, url, liz, isFolder=True)
     xbmcplugin.endOfDirectory(_handle)
@@ -115,9 +115,10 @@ def list_streams(genre=None):
 # Startet die Wiedergabe eines ausgewählten Streams
 def play_stream(path, icon, title, fanart):
     if not apikey or apikey.strip() == '':
-        xbmcgui.Dialog().notification('DI.FM', 'API Key erforderlich!', xbmcgui.NOTIFICATION_ERROR, 5000)
-        log('Abspielen abgebrochen: Kein API Key', xbmc.LOGERROR)
-        xbmcplugin.setResolvedUrl(_handle, False, listitem=None)
+        if not hasattr(play_stream, '_error_shown'):
+            xbmcgui.Dialog().notification('DI.FM', 'API Key erforderlich!', xbmcgui.NOTIFICATION_ERROR, 5000)
+            log('Abspielen abgebrochen: Kein API Key', xbmc.LOGERROR)
+            play_stream._error_shown = True
         return
     
     if player.isPlaying():
