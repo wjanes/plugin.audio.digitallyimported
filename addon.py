@@ -36,6 +36,22 @@ GENRES = {
 }
 
 STREAMS = {
+    'trance': {
+        'Trance': [f'http://prem2.di.fm/trance_hi?{apikey}', 'trance.jpg', addon.getLocalizedString(33200)],
+        'Epic Trance': [f'http://prem2.di.fm/epictrance_hi?{apikey}', 'epic_trance.jpg', addon.getLocalizedString(33201)],
+        'Vocal Trance': [f'http://prem2.di.fm/vocaltrance_hi?{apikey}', 'vocal_trance.jpg', addon.getLocalizedString(33202)],
+        'Deep Progressive Trance': [f'http://prem2.di.fm/deepprogressivetrance_hi?{apikey}', 'deep_progressive_trance.jpg', addon.getLocalizedString(33203)],
+        'Classic Trance': [f'http://prem2.di.fm/classictrance_hi?{apikey}', 'classic_trance.jpg', addon.getLocalizedString(33204)],
+        'Classic Vocal Trance': [f'http://prem2.di.fm/classicvocaltrance_hi?{apikey}', 'classic_vocal_trance.jpg', addon.getLocalizedString(33205)],
+        'Melodic Progressive': [f'http://prem2.di.fm/melodicprogressive_hi?{apikey}', 'melodic_progressive.jpg', addon.getLocalizedString(33206)],
+        'Goa-Psy Trance': [f'http://prem2.di.fm/goapsy_hi?{apikey}', 'goa_psy_trance.jpg', addon.getLocalizedString(33207)],
+        'Progressive': [f'http://prem2.di.fm/progressive_hi?{apikey}', 'progressive.jpg', addon.getLocalizedString(33208)],
+        'DJ Mixes': [f'http://prem2.di.fm/djmixes_hi?{apikey}', 'dj_mixes.jpg', addon.getLocalizedString(33209)],
+        'Progressive Psy': [f'http://prem2.di.fm/progressivepsy_hi?{apikey}', 'progressive_psy.jpg', addon.getLocalizedString(33210)],
+        'Dark Psytrance': [f'http://prem2.di.fm/darkpsytrance_hi?{apikey}', 'dark_psytrance.jpg', addon.getLocalizedString(33211)],
+        'Hands Up': [f'http://prem2.di.fm/handsup_hi?{apikey}', 'hands_up.jpg', addon.getLocalizedString(33212)]
+
+    },
     'house': {
         'Disco House': [f'http://prem2.di.fm/discohouse_hi?{apikey}', 'disco_house.jpg', addon.getLocalizedString(33100)],
         'Funky House': [f'http://prem2.di.fm/funkyhouse_hi?{apikey}', 'funky_house.jpg', addon.getLocalizedString(33101)],

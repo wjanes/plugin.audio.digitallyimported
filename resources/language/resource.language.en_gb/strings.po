@@ -25,6 +25,7 @@ msgctxt "#33001"
 msgid "Private API Key"
 msgstr "Private API Key"
 
+# House
 msgctxt "#33100"
 msgid "Disco House is what happens when the uplifting, feel-good sound of classic seventies disco collides with the smooth, kick drum sound of contemporary house. This channel is what happens when the best of the genre is curated into one mood-boosting radio playlist. Whether you’re looking to get up and dance with your friends or chill out and relax with your headphones, this handpicked collection of modern disco house beats will get you where you need to go. Just push play and let the captivating sounds of Disco House take over your mind, body, and spirit."
 msgstr "Disco House is what happens when the uplifting, feel-good sound of classic seventies disco collides with the smooth, kick drum sound of contemporary house. This channel is what happens when the best of the genre is curated into one mood-boosting radio playlist. Whether you’re looking to get up and dance with your friends or chill out and relax with your headphones, this handpicked collection of modern disco house beats will get you where you need to go. Just push play and let the captivating sounds of Disco House take over your mind, body, and spirit."
@@ -37,3 +38,56 @@ msgctxt "#33102"
 msgid "For over a century, the city of Chicago has been a hub of musical creativity that has left its mark on jazz, soul, and many other types of music. It’s no surprise then that Deep House was also born there as pioneering House artists in the 1980s began spinning sounds that combined the best of electronic House music with elements of funk, soul, and jazz for Chicago’s unique smaller and mid-sized clubs. The DI.FM Deep House channel brings together a remarkable collection of the best Deep House music in the world with silky acoustic tracks, probing baselines, and the occasional layer of soulful vocals. Standout artists on the channel include Miguel Migs, Fred Everything, Kerri Chandler, Sebb Junior, Saison, Art of Tones, and many more. Be sure to check out the channel’s excellent selection of mix shows, some of which are exclusive and first-to-air content only found on DI.FM."
 msgstr "For over a century, the city of Chicago has been a hub of musical creativity that has left its mark on jazz, soul, and many other types of music. It’s no surprise then that Deep House was also born there as pioneering House artists in the 1980s began spinning sounds that combined the best of electronic House music with elements of funk, soul, and jazz for Chicago’s unique smaller and mid-sized clubs. The DI.FM Deep House channel brings together a remarkable collection of the best Deep House music in the world with silky acoustic tracks, probing baselines, and the occasional layer of soulful vocals. Standout artists on the channel include Miguel Migs, Fred Everything, Kerri Chandler, Sebb Junior, Saison, Art of Tones, and many more. Be sure to check out the channel’s excellent selection of mix shows, some of which are exclusive and first-to-air content only found on DI.FM."
 
+# Trance
+
+msgctxt "#33200"
+msgid "Trance is a genre of electronic dance music that originated in the 1990s. It is characterized by its melodic phrases, build-ups, and breakdowns, often featuring repetitive beats and synthesized sounds. Trance music is known for its emotional and uplifting qualities, making it a popular choice for dance clubs and festivals."
+msgstr "Trance is a genre of electronic dance music that originated in the 1990s. It is characterized by its melodic phrases, build-ups, and breakdowns, often featuring repetitive beats and synthesized sounds. Trance music is known for its emotional and uplifting qualities, making it a popular choice for dance clubs and festivals."
+
+msgctxt "#33201"
+msgid "Epic Trance is a subgenre of trance music that emphasizes dramatic build-ups and breakdowns, often featuring orchestral elements and cinematic soundscapes. It is designed to evoke strong emotions and create a sense of euphoria on the dance floor."
+msgstr "Epic Trance is a subgenre of trance music that emphasizes dramatic build-ups and breakdowns, often featuring orchestral elements and cinematic soundscapes. It is designed to evoke strong emotions and create a sense of euphoria on the dance floor."
+
+msgctxt "#33202"
+msgid "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
+msgstr "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
+
+msgctxt "#33203"
+msgid "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
+msgstr "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
+
+msgctxt "#33204"
+msgid "Classic Trance is a subgenre of trance music that pays homage to the early sounds of the genre, often featuring uplifting melodies and a 4/4 beat. It is characterized by its nostalgic feel and is popular among long-time fans of trance music."
+msgstr "Classic Trance is a subgenre of trance music that pays homage to the early sounds of the genre, often featuring uplifting melodies and a 4/4 beat. It is characterized by its nostalgic feel and is popular among long-time fans of trance music."
+
+msgctxt "#33205"
+msgid "Classic Vocal Trance is a subgenre of trance music that combines the uplifting melodies of classic trance with prominent vocal performances. It often features emotional lyrics and powerful vocals, creating a captivating listening experience."
+msgstr "Classic Vocal Trance is a subgenre of trance music that combines the uplifting melodies of classic trance with prominent vocal performances. It often features emotional lyrics and powerful vocals, creating a captivating listening experience."
+
+msgctxt "#33206"
+msgid "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
+msgstr "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
+
+msgctxt "#33207"
+msgid "Goa-Psy Trance is a subgenre of trance music that originated in the Goa region of India. It is characterized by its psychedelic elements, intricate melodies, and driving basslines. Goa-Psy Trance often features long, evolving tracks that create a hypnotic and immersive experience for listeners."
+msgstr "Goa-Psy Trance is a subgenre of trance music that originated in the Goa region of India. It is characterized by its psychedelic elements, intricate melodies, and driving basslines. Goa-Psy Trance often features long, evolving tracks that create a hypnotic and immersive experience for listeners."
+
+msgctxt "#33208"
+msgid "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
+msgstr "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
+
+msgctxt "#33209"
+msgid "DJ Mixes is a subgenre of trance music that features continuous mixes of tracks, often blended together seamlessly. It is designed for dancing and creates an energetic atmosphere, making it popular in clubs and festivals."
+msgstr "DJ Mixes is a subgenre of trance music that features continuous mixes of tracks, often blended together seamlessly. It is designed for dancing and creates an energetic atmosphere, making it popular in clubs and festivals."
+
+msgctxt "#33210"
+msgid "Progressive Psy is a subgenre of trance music that combines elements of progressive trance with psychedelic influences. It often features intricate melodies, evolving soundscapes, and a focus on atmosphere, creating a deep and immersive listening experience."
+msgstr "Progressive Psy is a subgenre of trance music that combines elements of progressive trance with psychedelic influences. It often features intricate melodies, evolving soundscapes, and a focus on atmosphere, creating a deep and immersive listening experience."
+
+msgctxt "#33211"
+msgid "Dark Psytrance is a subgenre of trance music that emphasizes dark, atmospheric sounds and complex, evolving rhythms. It often features heavy basslines and intricate sound design, creating a hypnotic and immersive experience for listeners."
+msgstr "Dark Psytrance is a subgenre of trance music that emphasizes dark, atmospheric sounds and complex, evolving rhythms. It often features heavy basslines and intricate sound design, creating a hypnotic and immersive experience for listeners."
+
+msgctxt "#33212"
+msgid "Hands Up is a subgenre of trance music that is characterized by its upbeat tempo and catchy melodies. It often features vocal samples and is designed to get people dancing, making it popular in clubs and festivals."
+msgstr "Hands Up is a subgenre of trance music that is characterized by its upbeat tempo and catchy melodies. It often features vocal samples and is designed to get people dancing, making it popular in clubs and festivals."
