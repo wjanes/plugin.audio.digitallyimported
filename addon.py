@@ -19,20 +19,20 @@ player = xbmc.Player()
 
 # --- Genres und Streams zentral ---
 GENRES = {
-    'trance': "TRANCE",
-    'house': 'HOUSE',
-    'lounge': 'LOUNGE',
-    'techno': 'TECHNO',
-    'deep': 'DEEP',
+    'trance': "Trance",
+    'house': 'House',
+    'lounge': 'Lounge',
+    'techno': 'Techno',
+    'deep': 'Deep',
     'edm': 'EDM',
-    'chillout': 'CHILLOUT',
-    'bass': 'BASS',
-    'dance': 'DANCE',
-    'vocal': 'VOCAL',
-    'hard': 'HARD',
-    'ambience': 'AMBIENCE',
-    'synth': 'SYNTH',
-    'classic': 'CLASSIC'
+    'chillout': 'Chillout',
+    'bass': 'Bass',
+    'dance': 'Dance',
+    'vocal': 'Vocal',
+    'hard': 'Hard',
+    'ambience': 'Ambience',
+    'synth': 'Synth',
+    'classic': 'Classic'
 }
 
 STREAMS = {
@@ -87,7 +87,7 @@ def create_listitem(title, url, icon, fanart, plot='', genre='', is_playable=Tru
 def list_genres():
     xbmcplugin.setPluginCategory(_handle, 'DI.FM Genres')
     for genre_id, genre_name in GENRES.items():
-        url = get_url({'action': 'list_streams', 'genre': genre_id})
+        url = get_url({'action': 'list_streams', 'genre': genre_name})
         liz = xbmcgui.ListItem(label=genre_name)
         xbmcplugin.addDirectoryItem(_handle, url, liz, isFolder=True)
     xbmcplugin.endOfDirectory(_handle)
@@ -114,6 +114,12 @@ def list_streams(genre=None):
 
 # Startet die Wiedergabe eines ausgewählten Streams
 def play_stream(path, icon, title, fanart):
+    if not apikey or apikey.strip() == '':
+        xbmcgui.Dialog().notification('DI.FM', 'API Key erforderlich!', xbmcgui.NOTIFICATION_ERROR, 5000)
+        log('Abspielen abgebrochen: Kein API Key', xbmc.LOGERROR)
+        xbmcplugin.setResolvedUrl(_handle, False, listitem=None)
+        return
+    
     if player.isPlaying():
         log('Stop player')
         player.stop()
