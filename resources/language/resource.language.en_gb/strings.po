@@ -27,82 +27,217 @@ msgstr "Private API Key"
 
 # House
 msgctxt "#33100"
-msgid "Disco House is what happens when the uplifting, feel-good sound of classic seventies disco collides with the smooth, kick drum sound of contemporary house. This channel is what happens when the best of the genre is curated into one mood-boosting radio playlist. Whether you’re looking to get up and dance with your friends or chill out and relax with your headphones, this handpicked collection of modern disco house beats will get you where you need to go. Just push play and let the captivating sounds of Disco House take over your mind, body, and spirit."
-msgstr "Disco House is what happens when the uplifting, feel-good sound of classic seventies disco collides with the smooth, kick drum sound of contemporary house. This channel is what happens when the best of the genre is curated into one mood-boosting radio playlist. Whether you’re looking to get up and dance with your friends or chill out and relax with your headphones, this handpicked collection of modern disco house beats will get you where you need to go. Just push play and let the captivating sounds of Disco House take over your mind, body, and spirit."
+msgid "The feel good sound inspired from 70s disco combined with the warm kick drum of modern house music."
+msgstr "The feel good sound inspired from 70s disco combined with the warm kick drum of modern house music."
 
 msgctxt "#33101"
-msgid "With funky grooves, exciting and face-melting guitar licks, and clever samples that layer each song with a dynamic combination of beat and melody, you’ll certainly find yourself wanting to vibe out once you begin to take note of the 4/4 swing. Ideal for funk lovers and perfect for those who just can’t get enough of house music, this unique radio channel brings the best of both worlds to the table to create an engaging soundtrack of house music with an attitude. If you can’t get enough of tasty guitar solos and fast, energetic beats, give this radio channel a try and lose yourself in the perfect fusion playlist."
-msgstr "With funky grooves, exciting and face-melting guitar licks, and clever samples that layer each song with a dynamic combination of beat and melody, you’ll certainly find yourself wanting to vibe out once you begin to take note of the 4/4 swing. Ideal for funk lovers and perfect for those who just can’t get enough of house music, this unique radio channel brings the best of both worlds to the table to create an engaging soundtrack of house music with an attitude. If you can’t get enough of tasty guitar solos and fast, energetic beats, give this radio channel a try and lose yourself in the perfect fusion playlist."
+msgid "Focused on the funkiest grooves, with plenty of the guitar licks and clever samples placed around a 4/4 swing."
+msgstr "Focused on the funkiest grooves, with plenty of the guitar licks and clever samples placed around a 4/4 swing."
 
 msgctxt "#33102"
-msgid "For over a century, the city of Chicago has been a hub of musical creativity that has left its mark on jazz, soul, and many other types of music. It’s no surprise then that Deep House was also born there as pioneering House artists in the 1980s began spinning sounds that combined the best of electronic House music with elements of funk, soul, and jazz for Chicago’s unique smaller and mid-sized clubs. The DI.FM Deep House channel brings together a remarkable collection of the best Deep House music in the world with silky acoustic tracks, probing baselines, and the occasional layer of soulful vocals. Standout artists on the channel include Miguel Migs, Fred Everything, Kerri Chandler, Sebb Junior, Saison, Art of Tones, and many more. Be sure to check out the channel’s excellent selection of mix shows, some of which are exclusive and first-to-air content only found on DI.FM."
-msgstr "For over a century, the city of Chicago has been a hub of musical creativity that has left its mark on jazz, soul, and many other types of music. It’s no surprise then that Deep House was also born there as pioneering House artists in the 1980s began spinning sounds that combined the best of electronic House music with elements of funk, soul, and jazz for Chicago’s unique smaller and mid-sized clubs. The DI.FM Deep House channel brings together a remarkable collection of the best Deep House music in the world with silky acoustic tracks, probing baselines, and the occasional layer of soulful vocals. Standout artists on the channel include Miguel Migs, Fred Everything, Kerri Chandler, Sebb Junior, Saison, Art of Tones, and many more. Be sure to check out the channel’s excellent selection of mix shows, some of which are exclusive and first-to-air content only found on DI.FM."
+msgid "House music crafted for the smaller and mid-sized rooms - deeper tracks full of silky, smooth grooves."
+msgstr "House music crafted for the smaller and mid-sized rooms - deeper tracks full of silky, smooth grooves."
 
 msgctxt "#33103"
-msgid "House is a genre of electronic dance music that originated in the early 1980s in Chicago. It is characterized by its repetitive 4/4 beat, synthesized basslines, and use of samples and vocals. House music often features a steady tempo and a focus on rhythm and groove, making it popular in dance clubs and parties."
-msgstr "House is a genre of electronic dance music that originated in the early 1980s in Chicago. It is characterized by its repetitive 4/4 beat, synthesized basslines, and use of samples and vocals. House music often features a steady tempo and a focus on rhythm and groove, making it popular in dance clubs and parties."
+msgid "Born in Chicago and now global, house music is always evolving but remains true to its pure 4/4 structure."
+msgstr "Born in Chicago and now global, house music is always evolving but remains true to its pure 4/4 structure."
 
 msgctxt "#33104"
-msgid "Deep Organic House is a subgenre of house music that combines elements of deep house with organic and acoustic sounds. It often features live instrumentation, such as guitars, pianos, and percussion, alongside electronic beats and synths. Deep Organic House is known for its warm, soulful sound and is often associated with chill-out and lounge music."
-msgstr "Deep Organic House is a subgenre of house music that combines elements of deep house with organic and acoustic sounds. It often features live instrumentation, such as guitars, pianos, and percussion, alongside electronic beats and synths. Deep Organic House is known for its warm, soulful sound and is often associated with chill-out and lounge music."
+msgid "A deeper, more meditative, and slower pace of House music often featuring acoustic and ethnic instrumental samples."
+msgstr "A deeper, more meditative, and slower pace of House music often featuring acoustic and ethnic instrumental samples."
 
 msgctxt "#33105"
-msgid "Deep Progressive House is a subgenre of house music that combines elements of deep house and progressive house. It often features atmospheric soundscapes, evolving melodies, and a focus on groove and rhythm. Deep Progressive House is known for its hypnotic and immersive qualities, making it popular in both dance clubs and chill-out settings."
-msgstr "Deep Progressive House is a subgenre of house music that combines elements of deep house and progressive house. It often features atmospheric soundscapes, evolving melodies, and a focus on groove and rhythm. Deep Progressive House is known for its hypnotic and immersive qualities, making it popular in both dance clubs and chill-out settings."
+msgid "This smooth, groove-heavy selection of deep progressive house tracks is the perfect soundtrack for smaller and mid-sized rooms."
+msgstr "This smooth, groove-heavy selection of deep progressive house tracks is the perfect soundtrack for smaller and mid-sized rooms."
 
+msgctxt "#33106"
+msgid "Vocal House is a subgenre of house music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the rhythmic elements of house music with powerful vocals to create a captivating listening experience."
+msgstr "Vocal House is a subgenre of house music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the rhythmic elements of house music with powerful vocals to create a captivating listening experience."
 
+msgctxt "#33107"
+msgid "Slap House is a subgenre of house music that is characterized by its heavy basslines, punchy drums, and energetic rhythms. It often features aggressive and distorted sounds, creating a high-energy and intense listening experience."
+msgstr "Slap House is a subgenre of house music that is characterized by its heavy basslines, punchy drums, and energetic rhythms. It often features aggressive and distorted sounds, creating a high-energy and intense listening experience."
+
+msgctxt "#33108"
+msgid "Summer Chill House is a subgenre of house music that combines the upbeat and energetic elements of house with the relaxed and laid-back vibes of chill-out music. It often features tropical and summery sounds, creating a feel-good and uplifting listening experience."
+msgstr "Summer Chill House is a subgenre of house music that combines the upbeat and energetic elements of house with the relaxed and laid-back vibes of chill-out music. It often features tropical and summery sounds, creating a feel-good and uplifting listening experience."
+
+msgctxt "#33109"
+msgid "Soulful House is a subgenre of house music that combines elements of soul and R&B with the rhythmic and danceable qualities of house music. It often features soulful vocals, melodic instrumentation, and a focus on groove and rhythm."
+msgstr "Soulful House is a subgenre of house music that combines elements of soul and R&B with the rhythmic and danceable qualities of house music. It often features soulful vocals, melodic instrumentation, and a focus on groove and rhythm."
+
+msgctxt "#33110"
+msgid "Nu Disco is a subgenre of house music that combines elements of disco and funk with modern electronic production techniques. It often features groovy basslines, catchy melodies, and a focus on danceable rhythms."
+msgstr "Nu Disco is a subgenre of house music that combines elements of disco and funk with modern electronic production techniques. It often features groovy basslines, catchy melodies, and a focus on danceable rhythms."
+
+msgctxt "#33111"
+msgid "Tech House is a subgenre of house music that combines elements of techno and house. It often features driving beats, repetitive rhythms, and a focus on groove and energy. Tech House is known for its hypnotic and danceable qualities, making it popular in clubs and festivals."
+msgstr "Tech House is a subgenre of house music that combines elements of techno and house. It often features driving beats, repetitive rhythms, and a focus on groove and energy. Tech House is known for its hypnotic and danceable qualities, making it popular in clubs and festivals."
+
+msgctxt "#33112"
+msgid "Electro House is a subgenre of house music that combines elements of electronic dance music with the rhythmic and danceable qualities of house. It often features heavy basslines, energetic beats, and a focus on high-energy and intense listening experiences."
+msgstr "Electro House is a subgenre of house music that combines elements of electronic dance music with the rhythmic and danceable qualities of house. It often features heavy basslines, energetic beats, and a focus on high-energy and intense listening experiences."
+
+msgctxt "#33113"
+msgid "Where dance meets pop. Crossover favorites, stadium-sized anthems and the biggest electronic tunes in existence."
+msgstr "Where dance meets pop. Crossover favorites, stadium-sized anthems and the biggest electronic tunes in existence."
+
+msgctxt "#33114"
+msgid "Fusing together house elements from the past and the present - prime time music full of uplifting high energy."
+msgstr "Fusing together house elements from the past and the present - prime time music full of uplifting high energy."
+
+msgctxt "#33115"
+msgid "From the funkiest grooves to the dirtiest beats. Hard-hitting, high energy 4/4 club cuts to move the masses."
+msgstr "From the funkiest grooves to the dirtiest beats. Hard-hitting, high energy 4/4 club cuts to move the masses."
+
+msgctxt "#33116"
+msgid "Blending together elements of house music, speed garage, and techno – it’s all about the low end frequencies."
+msgstr "Blending together elements of house music, speed garage, and techno – it’s all about the low end frequencies."
+
+msgctxt "#33117"
+msgid "Your favorite dance tunes from the start of the decade. Familiar hits and overlooked classics in abundance."
+msgstr "Your favorite dance tunes from the start of the decade. Familiar hits and overlooked classics in abundance."
+
+msgctxt "#33118"
+msgid "One of the biggest cultural soundtracks with the infectious thump of house music. Expect sultry saxophones, trumpets, and finger snapping grooves."
+msgstr "One of the biggest cultural soundtracks with the infectious thump of house music. Expect sultry saxophones, trumpets, and finger snapping grooves."
+
+msgctxt "#33119"
+msgid "The biggest classics and secret weapons – this is a true treasure chest of house tracks from back in the day."
+msgstr "The biggest classics and secret weapons – this is a true treasure chest of house tracks from back in the day."
+
+msgctxt "#33120"
+msgid "The combination of 1920s-1940s jazz and swing music, big band horns and modern day electro house."
+msgstr "The combination of 1920s-1940s jazz and swing music, big band horns and modern day electro house."
+
+msgctxt "#33121"
+msgid "Where would dance music be without Detroit? The city that started it all continues to inspire and educate."
+msgstr "Where would dance music be without Detroit? The city that started it all continues to inspire and educate."
+
+msgctxt "#33122"
+msgid "The sounds of Salsa, Brazilian beats and Latin Jazz with the steady grooves of modern East Coast dance music."
+msgstr "The sounds of Salsa, Brazilian beats and Latin Jazz with the steady grooves of modern East Coast dance music."
+
+msgctxt "#33123"
+msgid "The percussive side of the house and tech house scene, tribal house takes drums and puts them in the forefront."
+msgstr "The percussive side of the house and tech house scene, tribal house takes drums and puts them in the forefront."
+
+msgctxt "#33124"
+msgid "Always moving forward, progressive continues to reinvent itself into new sounds and styles made for the floor."
+msgstr "Always moving forward, progressive continues to reinvent itself into new sounds and styles made for the floor."
+
+msgctxt "#33125"
+msgid "ICONYC Radio, is the brand new channel exclusively on the global platform DI.FM. Showcasing forward-thinking Melodic House, Techno, Dark Disco, and Afro. Curated by the artistic team behind the renowned label, ICONYC Radio delivers a finely tuned selection of crafted music by leading innovators, musical tastemakers, and genre-defying artists."
+msgstr "ICONYC Radio, is the brand new channel exclusively on the global platform DI.FM. Showcasing forward-thinking Melodic House, Techno, Dark Disco, and Afro. Curated by the artistic team behind the renowned label, ICONYC Radio delivers a finely tuned selection of crafted music by leading innovators, musical tastemakers, and genre-defying artists."
+
+msgctxt "#33126"
+msgid "The sound of the largest events. From the gargantuan festivals, the huge main rooms and the biggest DJs."
+msgstr "The sound of the largest events. From the gargantuan festivals, the huge main rooms and the biggest DJs."
+
+msgctxt "#33127"
+msgid "The melodic side of progressive house, packed with driving rhythms and forward thinking sounds."
+msgstr "The melodic side of progressive house, packed with driving rhythms and forward thinking sounds."
+
+msgctxt "#33128"
+msgid "Catchy pop music blended together with vintage synthesizers and electronic instrumentation."
+msgstr "Catchy pop music blended together with vintage synthesizers and electronic instrumentation."
+
+msgctxt "#33129"
+msgid "Elements of house, funk, and disco. Mid-tempo beats, soulful grooves and head nodding selections."
+msgstr "Elements of house, funk, and disco. Mid-tempo beats, soulful grooves and head nodding selections."
+
+msgctxt "#33130"
+msgid "A fusion of deep house & techno. Punchy grooves, spaced out sounds and forward thinking productions."
+msgstr "A fusion of deep house & techno. Punchy grooves, spaced out sounds and forward thinking productions."
+
+msgctxt "#33131"
+msgid "Head nodding beats, chilled vocals, and lush soundscapes to bring down the sun and start the night."
+msgstr "Head nodding beats, chilled vocals, and lush soundscapes to bring down the sun and start the night."
+
+msgctxt "#33132"
+msgid "The sounds of Chill & Tropical House are expertly made for lounging and dancing alike with its deeper house vibes."
+msgstr "The sounds of Chill & Tropical House are expertly made for lounging and dancing alike with its deeper house vibes."
+
+msgctxt "#33133"
+msgid "From techno, deep house, progressive and trance – check out the sounds of the DJ deep in the mix."
+msgstr "From techno, deep house, progressive and trance – check out the sounds of the DJ deep in the mix."
 
 # Trance
 
 msgctxt "#33200"
-msgid "Trance is a genre of electronic dance music that originated in the 1990s. It is characterized by its melodic phrases, build-ups, and breakdowns, often featuring repetitive beats and synthesized sounds. Trance music is known for its emotional and uplifting qualities, making it a popular choice for dance clubs and festivals."
-msgstr "Trance is a genre of electronic dance music that originated in the 1990s. It is characterized by its melodic phrases, build-ups, and breakdowns, often featuring repetitive beats and synthesized sounds. Trance music is known for its emotional and uplifting qualities, making it a popular choice for dance clubs and festivals."
+msgid "Emotive dance music which embraces incredible melodies, future-facing production and energetic anthems heard worldwide."
+msgstr "Emotive dance music which embraces incredible melodies, future-facing production and energetic anthems heard worldwide."
 
 msgctxt "#33201"
-msgid "Epic Trance is a subgenre of trance music that emphasizes dramatic build-ups and breakdowns, often featuring orchestral elements and cinematic soundscapes. It is designed to evoke strong emotions and create a sense of euphoria on the dance floor."
-msgstr "Epic Trance is a subgenre of trance music that emphasizes dramatic build-ups and breakdowns, often featuring orchestral elements and cinematic soundscapes. It is designed to evoke strong emotions and create a sense of euphoria on the dance floor."
+msgid "Lush vocals paired together with emotive dance music. Beautiful melodies and endless energy."
+msgstr "Lush vocals paired together with emotive dance music. Beautiful melodies and endless energy."
 
 msgctxt "#33202"
-msgid "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
-msgstr "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
+msgid "Trance in its most boisterous form. Uplifting melodies on top of high energy beats create these euphoric anthems."
+msgstr "Trance in its most boisterous form. Uplifting melodies on top of high energy beats create these euphoric anthems."
 
 msgctxt "#33203"
-msgid "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
-msgstr "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
+msgid "A subgenre of Progressive Trance that features a deeper, more emotional and melodic sound."
+msgstr "A subgenre of Progressive Trance that features a deeper, more emotional and melodic sound."
 
 msgctxt "#33204"
-msgid "Classic Trance is a subgenre of trance music that pays homage to the early sounds of the genre, often featuring uplifting melodies and a 4/4 beat. It is characterized by its nostalgic feel and is popular among long-time fans of trance music."
-msgstr "Classic Trance is a subgenre of trance music that pays homage to the early sounds of the genre, often featuring uplifting melodies and a 4/4 beat. It is characterized by its nostalgic feel and is popular among long-time fans of trance music."
+msgid "The classic melodies, the epic breakdowns and gigantic builds. Re-experience Trance music in her prime."
+msgstr "The classic melodies, the epic breakdowns and gigantic builds. Re-experience Trance music in her prime."
 
 msgctxt "#33205"
-msgid "Classic Vocal Trance is a subgenre of trance music that combines the uplifting melodies of classic trance with prominent vocal performances. It often features emotional lyrics and powerful vocals, creating a captivating listening experience."
-msgstr "Classic Vocal Trance is a subgenre of trance music that combines the uplifting melodies of classic trance with prominent vocal performances. It often features emotional lyrics and powerful vocals, creating a captivating listening experience."
+msgid "Classic sounds of Vocal Trance, lush vocals paired together with emotive dance music"
+msgstr "Classic sounds of Vocal Trance, lush vocals paired together with emotive dance music"
 
 msgctxt "#33206"
-msgid "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
-msgstr "Vocal Trance is a subgenre of trance music that features prominent vocal performances, often with uplifting and emotional lyrics. It combines the melodic elements of trance with powerful vocals to create a captivating listening experience."
+msgid "The melodic side of progressive house, packed with driving rhythms and forward thinking sounds."
+msgstr "The melodic side of progressive house, packed with driving rhythms and forward thinking sounds."
 
 msgctxt "#33207"
-msgid "Goa-Psy Trance is a subgenre of trance music that originated in the Goa region of India. It is characterized by its psychedelic elements, intricate melodies, and driving basslines. Goa-Psy Trance often features long, evolving tracks that create a hypnotic and immersive experience for listeners."
-msgstr "Goa-Psy Trance is a subgenre of trance music that originated in the Goa region of India. It is characterized by its psychedelic elements, intricate melodies, and driving basslines. Goa-Psy Trance often features long, evolving tracks that create a hypnotic and immersive experience for listeners."
+msgid "A very psychedelic form of trance, Goa-Psy Trance is a sound full of arpeggiated synths and trippy effects."
+msgstr "A very psychedelic form of trance, Goa-Psy Trance is a sound full of arpeggiated synths and trippy effects."
 
 msgctxt "#33208"
-msgid "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
-msgstr "Progressive Trance is a subgenre of trance music that focuses on gradual build-ups and evolving soundscapes. It often features longer tracks with subtle changes in melody and rhythm, creating a hypnotic and immersive experience for listeners."
+msgid "Always moving forward, progressive continues to reinvent itself into new sounds and styles made for the floor."
+msgstr "Always moving forward, progressive continues to reinvent itself into new sounds and styles made for the floor."
 
 msgctxt "#33209"
 msgid "DJ Mixes is a subgenre of trance music that features continuous mixes of tracks, often blended together seamlessly. It is designed for dancing and creates an energetic atmosphere, making it popular in clubs and festivals."
 msgstr "DJ Mixes is a subgenre of trance music that features continuous mixes of tracks, often blended together seamlessly. It is designed for dancing and creates an energetic atmosphere, making it popular in clubs and festivals."
 
 msgctxt "#33210"
-msgid "Progressive Psy is a subgenre of trance music that combines elements of progressive trance with psychedelic influences. It often features intricate melodies, evolving soundscapes, and a focus on atmosphere, creating a deep and immersive listening experience."
-msgstr "Progressive Psy is a subgenre of trance music that combines elements of progressive trance with psychedelic influences. It often features intricate melodies, evolving soundscapes, and a focus on atmosphere, creating a deep and immersive listening experience."
+msgid "Progress your mind to undiscovered psychedelic dimensions."
+msgstr "Progress your mind to undiscovered psychedelic dimensions."
 
 msgctxt "#33211"
-msgid "Dark Psytrance is a subgenre of trance music that emphasizes dark, atmospheric sounds and complex, evolving rhythms. It often features heavy basslines and intricate sound design, creating a hypnotic and immersive experience for listeners."
-msgstr "Dark Psytrance is a subgenre of trance music that emphasizes dark, atmospheric sounds and complex, evolving rhythms. It often features heavy basslines and intricate sound design, creating a hypnotic and immersive experience for listeners."
+msgid "The darker form of PsyTrance, which is a sound all its own – direct from Goa to your headphones."
+msgstr "The darker form of PsyTrance, which is a sound all its own – direct from Goa to your headphones."
 
 msgctxt "#33212"
-msgid "Hands Up is a subgenre of trance music that is characterized by its upbeat tempo and catchy melodies. It often features vocal samples and is designed to get people dancing, making it popular in clubs and festivals."
-msgstr "Hands Up is a subgenre of trance music that is characterized by its upbeat tempo and catchy melodies. It often features vocal samples and is designed to get people dancing, making it popular in clubs and festivals."
+msgid "A channel showcasing everything from hard dance, trance and happy hardcore to lift the spirits (and the arms)."
+msgstr "A channel showcasing everything from hard dance, trance and happy hardcore to lift the spirits (and the arms)."
 
+# Lounge
+
+msgctxt "#33300"
+msgid "#33300"
+msgstr "#33300"
+
+msgctxt "#33301"
+msgid "#33301"
+msgstr "#33301"
+
+msgctxt "#33302"
+msgid "#33302"
+msgstr "#33302"
+
+msgctxt "#33303"
+msgid "#33303"
+msgstr "#33303"
+
+msgctxt "#33304"
+msgid "#33304"
+msgstr "#33304"
+
+msgctxt "#33305"
+msgid "#33305"
+msgstr "#33305"
