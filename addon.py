@@ -1,3 +1,5 @@
+import urllib.request
+import urllib.error
 import xbmc
 import xbmcaddon
 import xbmcplugin
@@ -362,6 +364,24 @@ def play_stream(path, icon, title, fanart):
             )
             log("Abspielen abgebrochen: Kein API Key", xbmc.LOGERROR)
             play_stream._error_shown = True  # type: ignore
+        return
+
+    # Prüfe, ob die URL erreichbar ist (HEAD-Request)
+    try:
+        req = urllib.request.Request(path, method="HEAD")
+        with urllib.request.urlopen(req, timeout=5) as response:
+            if response.status >= 400:
+                raise urllib.error.HTTPError(
+                    path, response.status, response.reason, response.headers, None
+                )
+    except Exception as e:
+        xbmcgui.Dialog().notification(
+            "DI.FM",
+            f"Stream-URL nicht erreichbar!\n{e}",
+            xbmcgui.NOTIFICATION_ERROR,
+            5000,
+        )
+        log(f"Fehler beim HTTP-Check: {e}", xbmc.LOGERROR)
         return
 
     if player.isPlaying():
